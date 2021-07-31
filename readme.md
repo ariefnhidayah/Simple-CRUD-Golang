@@ -1,5 +1,5 @@
-# Simple CRUD With Golang
-This project is system CRUD for data peoples, in this project using database MySQL and programming languange Go Lang
+# Simple REST API With Golang
+This project is system REST API for data peoples, in this project using database MySQL and programming languange Go Lang
 
 
 # Structure Database
