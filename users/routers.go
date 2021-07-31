@@ -2,6 +2,7 @@ package users
 
 import (
 	"errors"
+	"fmt"
 	"net/http"
 	"simple_crud/common"
 
@@ -66,13 +67,15 @@ func userLogin(c *gin.Context) {
 	// Check username
 	user, err := FindOneUser(&User{Username: loginValidator.Login.Username})
 	if err != nil {
-		c.JSON(http.StatusForbidden, common.NewError("error", errors.New("Not Registered username or invalid password")))
+		c.JSON(http.StatusForbidden, common.NewError("error", errors.New("Not Registered Username")))
 		return
 	}
 
+	fmt.Println(loginValidator.Login.Username)
+
 	// check password
 	if user.checkPassword(loginValidator.Login.Password) != nil {
-		c.JSON(http.StatusForbidden, common.NewError("error", errors.New("Not Registered username or invalid password")))
+		c.JSON(http.StatusForbidden, common.NewError("error", errors.New("Invalid Password")))
 		return
 	}
 

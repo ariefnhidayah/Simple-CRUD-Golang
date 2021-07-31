@@ -58,7 +58,7 @@ func (loginValidator *LoginValidator) Bind(c *gin.Context) error {
 	if err != nil {
 		return err
 	}
-	loginValidator.Login.Username = loginValidator.user.Username
+	loginValidator.user.Username = loginValidator.Login.Username
 	return nil
 }
 
