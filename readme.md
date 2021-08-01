@@ -47,6 +47,8 @@ From the project root, run:
 go mod tidy
 go run main.go
 ```
+## API Documentation
+https://www.postman.com/collections/90893a6cd48cac68d7bb
 
 # Notes
 Before you run this project, you should to create database with name crud_golang

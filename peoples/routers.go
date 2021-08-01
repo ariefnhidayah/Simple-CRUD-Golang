@@ -97,7 +97,7 @@ func updatePeople(c *gin.Context) {
 		return
 	}
 
-	serializer := PeopleSerializer{people}
+	serializer := PeopleSerializer{peopleModelValidator.people}
 	c.JSON(http.StatusOK, common.ResponseApi("Success", serializer.Response()))
 }
 
