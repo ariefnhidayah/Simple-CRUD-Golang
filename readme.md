@@ -2,7 +2,7 @@
 This project is system REST API for data peoples, in this project using database MySQL and programming languange Go Lang
 
 
-# Structure Database
+## Structure Database
 ```
 - users
     - id int (primary key)
@@ -30,27 +30,27 @@ This project is system REST API for data peoples, in this project using database
     - date_modified datetime
 ```
 
-# Getting Started
-## Install Golang
+## Getting Started
+### Install Golang
 
 Make sure you have Go 1.13 or higher installed.
 
 https://golang.org/doc/install
 
-## Environment Config
+### Environment Config
 
 Set-up the standard Go environment variables according to latest guidance (see https://golang.org/doc/install#install).
 
-## Run App
+### Run App
 From the project root, run:
 ```
 go mod tidy
 go run main.go
 ```
-## API Documentation
+### API Documentation
 https://www.postman.com/collections/90893a6cd48cac68d7bb
 
-# Notes
+## Notes
 Before you run this project, you should to create database with name crud_golang
 
 You can use this project database inside the repository github with filename **database.sql**
