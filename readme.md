@@ -54,3 +54,6 @@ https://www.postman.com/collections/90893a6cd48cac68d7bb
 Before you run this project, you should to create database with name crud_golang
 
 You can use this project database inside the repository github with filename **database.sql**
+
+## Tools Used
+![GO](https://img.shields.io/badge/-Go-FFFFFF?style=flat&logo=go) ![MySQL](https://img.shields.io/badge/-MySQL-FFFFFF?style=flat&logo=mysql)
